@@ -1,0 +1,132 @@
+/* ----------------------------------------------------------------- */
+/* DEFINICIÓN DE COLORES DE MARCA: JIVO GAMER ESTÉTICA */
+/* ----------------------------------------------------------------- */
+:root {
+    /* Dorado del Logo: Menos saturado, más metálico y profesional */
+    --color-dorado: #C5A344;        
+    /* Gris Plata del Logo: Para fondos y detalles secundarios */
+    --color-gris-plata: #c3c3c3;      
+    /* Color para el texto principal (Azul oscuro para alto contraste) */
+    --color-texto-oscuro: #2c3e50;  
+    /* Blanco puro para fondos de secciones */
+    --color-fondo-seccion: #fcfcfc;   
+    /* Fondo base de la página (un gris muy, muy claro, como el fondo del logo) */
+    --color-fondo-base: #f7f7f7; 
+}
+
+/* ----------------------------------------------------------------- */
+/* 1. ESTILOS BASE Y FUENTE */
+/* ----------------------------------------------------------------- */
+body { 
+    /* Define la fuente para todo el portafolio */
+    font-family: 'Arial', sans-serif; 
+    /* Espaciado de línea */
+    line-height: 1.6; 
+    /* Espacio alrededor del cuerpo */
+    padding: 20px; 
+    /* Fondo general de la página */
+    background-color: var(--color-fondo-base); 
+    /* Color de texto predeterminado */
+    color: var(--color-texto-oscuro); 
+}
+
+/* ----------------------------------------------------------------- */
+/* 2. ESTILOS DEL ENCABEZADO (HEADER) */
+/* ----------------------------------------------------------------- */
+header { 
+    /* Color principal: Dorado Metálico */
+    background: var(--color-dorado); 
+    /* Color del texto */
+    color: var(--color-texto-oscuro); 
+    /* Relleno interior */
+    padding: 25px 0; 
+    /* Centra el texto */
+    text-align: center; 
+    /* Margen inferior */
+    margin-bottom: 30px; 
+    /* Borde redondeado */
+    border-radius: 10px; 
+    /* Sombra con más contraste */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 { 
+    /* Elimina el margen por defecto del título */
+    margin: 0; 
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------- */
+/* 3. ESTILOS DE SECCIONES GENERALES */
+/* ----------------------------------------------------------------- */
+section { 
+    /* Fondo de las cajas de contenido (casi blanco) */
+    background: var(--color-fondo-seccion); 
+    /* Relleno interior */
+    padding: 25px; 
+    /* Margen para separar las secciones */
+    margin-bottom: 25px; 
+    /* Borde redondeado */
+    border-radius: 10px; 
+    /* Sombra para efecto de elevación */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+}
+
+/* Títulos de las secciones (Acerca de Mí, Proyectos) */
+h2 { 
+    /* Color del texto (Oscuro) */
+    color: var(--color-texto-oscuro); 
+    /* Línea de separación debajo del título (Dorado) */
+    border-bottom: 2px solid var(--color-dorado); 
+    /* Relleno inferior */
+    padding-bottom: 8px; 
+    /* Margen inferior */
+    margin-bottom: 20px; 
+}
+
+h3 {
+    /* Color Dorado para los subtítulos (CREACIÓN DE VIDEOJUEGOS, DESARROLLO WEB) */
+    color: var(--color-dorado);
+}
+
+/* ----------------------------------------------------------------- */
+/* 4. ESTILOS ESPECÍFICOS DE PROYECTOS Y ENLACES */
+/* ----------------------------------------------------------------- */
+.proyecto { 
+    /* Borde a la izquierda (Dorado) */
+    border-left: 4px solid var(--color-dorado); 
+    /* Relleno a la izquierda */
+    padding-left: 20px; 
+    /* Espacio debajo de cada proyecto */
+    margin-bottom: 20px; 
+}
+
+/* Estilos para todos los enlaces dentro de la clase 'enlaces' */
+.enlaces a { 
+    /* Color del enlace (Gris Plata) */
+    color: var(--color-texto-oscuro); 
+    /* Espacio entre cada enlace */
+    margin-right: 20px; 
+    /* Quita el subrayado */
+    text-decoration: none; 
+    /* Fuente en negrita */
+    font-weight: bold; 
+    /* Transición suave */
+    transition: color 0.3s; 
+}
+
+.enlaces a:hover { 
+    /* Subrayado al pasar el ratón */
+    text-decoration: underline; 
+    /* Color al pasar el ratón (Dorado) */
+    color: var(--color-dorado); 
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: var(--color-texto-oscuro);
+}
